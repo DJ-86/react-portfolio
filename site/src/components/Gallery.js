@@ -1,12 +1,15 @@
 import Carousel from 'react-bootstrap/Carousel';
+import image1 from '../images/readme-generator.jpg';
+import image2 from '../images/weather.jpg';
+import image3 from '../images/global-gazette.jpg';
 
 function IndividualIntervalsExample() {
   return (
-    <Carousel>
+    <Carousel variant="dark">
       <Carousel.Item interval={1000}>
         <img
           className="d-block carousel-images"
-          src="https://github.com/DJ-86/README-generator/raw/main/assets/readme-images/terminal.jpg"
+          src={image1}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -17,7 +20,7 @@ function IndividualIntervalsExample() {
       <Carousel.Item interval={500}>
         <img
           className="d-block carousel-images"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+          src={image2}
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -28,7 +31,7 @@ function IndividualIntervalsExample() {
       <Carousel.Item>
         <img
           className="d-block carousel-images"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
+          src={image3}
           alt="Third slide"
         />
         <Carousel.Caption>

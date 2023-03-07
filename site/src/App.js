@@ -1,9 +1,11 @@
 import BasicExample from './components/Navbar';
 import Typewriter from 'typewriter-effect';
-import Squares from './components/Squares';
 import Gallery from './components/Gallery'
 import './App.css';
 import GenerateSquares from './components/Squares';
+import About from './components/About';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -34,7 +36,7 @@ function App() {
       <div className="squares" />
       <GenerateSquares />
       <BasicExample  />
-      <div className ="introText">
+      
       <Typewriter
         onInit={(typewriter) => {
         typewriter.typeString("Hi, my name is David Jones. I'm a dev from the UK.")
@@ -44,8 +46,10 @@ function App() {
       .start();
   }}
 />
-      </div>
+      <About />
+      <Skills />
       <Gallery />
+      <Contact />
 
     </div>
   );
